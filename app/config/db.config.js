@@ -5,7 +5,7 @@ const { MONGO_URI } = process.env;
 exports.connect = () => {
   // Connecting to the database
   mongoose
-    .connect(MONGO_URI, {
+    .connect("mongodb://0.0.0.0:7017/myapp", {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     })
